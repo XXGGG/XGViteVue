@@ -1,0 +1,17 @@
+{ 
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",  // ✅ 修改为 "esnext" 或 "preserve"
+    "moduleResolution": "bundler",  // 确保模块解析是 Bundler 模式
+    "types": ["unplugin-vue-router/client"]  // 引入 unplugin-vue-router 的类型
+  },
+  "include": [
+    "./src",
+    "./typed-router.d.ts"  // 生成的路由类型文件路径
+  ],
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ]
+}
